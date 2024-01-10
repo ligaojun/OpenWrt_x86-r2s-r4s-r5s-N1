@@ -10,8 +10,7 @@ name: Build OpenWrt
 
 
 on:
-  schedule:
-    - cron: 0 20 * * *
+  push
 
 env:
   REPO_TOKEN: ${{ secrets.TOKEN_KIDDIN9 }}
