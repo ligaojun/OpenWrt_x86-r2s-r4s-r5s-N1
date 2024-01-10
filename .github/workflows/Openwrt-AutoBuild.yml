@@ -9,8 +9,9 @@
 name: Build OpenWrt
 
 
-on: 
-  repository_dispatch:
+on:
+  schedule:
+    - cron: 0 20 * * *
 
 env:
   REPO_TOKEN: ${{ secrets.TOKEN_KIDDIN9 }}
